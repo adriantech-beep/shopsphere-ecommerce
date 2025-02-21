@@ -1,7 +1,7 @@
 .dealsWrapper {
   background-color: beige;
   height: 38rem;
-  background-image: url(../src/assets/dealsbg.jpg);
+  background-image: url(../../assets/dealsbg.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
