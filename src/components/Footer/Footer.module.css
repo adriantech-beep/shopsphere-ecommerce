@@ -1,0 +1,28 @@
+.footerWrapper {
+  width: 100%;
+  height: 8em;
+  background-color: #242a2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.footerWrapper p {
+  color: #ececec;
+}
+.footerLinks {
+  display: flex;
+  gap: 1em;
+}
+.footerLinks p {
+  cursor: pointer;
+  color: #ececec;
+}
+.socialLinks {
+  display: flex;
+  gap: 1.5em;
+}
+.socialLinks i {
+  color: #ececec;
+}

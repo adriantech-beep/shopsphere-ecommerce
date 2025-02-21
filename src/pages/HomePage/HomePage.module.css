@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  min-height: 36rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(50, 49, 46, 0.8),
+      rgba(56, 59, 60, 0.8)
+    ),
+    url("../src/assets/bg.jpg");
+}
+.title {
+  width: 100%;
+  max-width: 40rem;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  top: 15rem;
+  left: 10rem;
+}
+.title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fb4141;
+}
+.title p {
+  color: #f7f7f7;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+@media (max-width: 995px) {
+  .title {
+    left: 0.5rem;
+    padding: 1em;
+  }
+  .title h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fb4141;
+  }
+}

@@ -1,0 +1,9 @@
+.categoryTitle {
+  display: flex;
+  margin-top: 1em;
+  padding: 0em 5em;
+}
+.categoryTitle h1 {
+  font-weight: 600;
+  color: #1d1616;
+}

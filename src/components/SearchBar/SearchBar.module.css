@@ -1,0 +1,76 @@
+/* From Uiverse.io by Galahhad */
+.searchLabel {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f3f3f6;
+  padding: 9px;
+  cursor: text;
+}
+
+.searchLabel:hover {
+  border-color: gray;
+}
+
+.searchLabel:focus-within {
+  background: #f3f3f6;
+  border-color: gray;
+}
+
+.searchLabel input {
+  outline: none;
+  width: 100%;
+  border: none;
+  background: none;
+  color: rgb(41, 40, 40);
+}
+
+.searchLabel input:focus + .slashIcon,
+.searchLabel input:valid + .slashIcon {
+  display: none;
+}
+
+.searchLabel input:valid ~ .search-icon {
+  display: block;
+}
+
+.searchLabel input:valid {
+  width: calc(100% - 22px);
+  transform: translateX(20px);
+}
+
+.searchLabel svg,
+.slashIcon {
+  position: absolute;
+  color: #7e7e7e;
+}
+
+.searchIcon {
+  display: none;
+  width: 12px;
+  height: auto;
+}
+
+.slashIcon {
+  right: 7px;
+  border: 1px solid #f3f3f6;
+  background: linear-gradient(-225deg, #343434, #8f8d8d);
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: inset 0 -2px 0 0 #3f3f3f, inset 0 0 1px 1px rgb(94, 93, 93),
+    0 1px 2px 1px rgba(28, 28, 29, 0.4);
+  cursor: pointer;
+  font-size: 12px;
+  width: 15px;
+}
+
+.slashIcon:active {
+  box-shadow: inset 0 1px 0 0 #3f3f3f, inset 0 0 1px 1px rgb(94, 93, 93),
+    0 1px 2px 0 rgba(28, 28, 29, 0.4);
+  text-shadow: 0 1px 0 #7e7e7e;
+  color: transparent;
+}

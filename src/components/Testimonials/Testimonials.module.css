@@ -1,0 +1,147 @@
+.testimonialsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0em;
+  max-width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.testimonialsTitle {
+  margin-bottom: 2rem;
+  padding: 2em;
+}
+
+.testimonialsTitle h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.testimonialsTitle p {
+  font-size: 1rem;
+  color: #212121;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+  background-color: #fffdf0;
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 38em;
+  height: 26em;
+  padding: 1rem;
+}
+.profile {
+  display: flex;
+  gap: 1em;
+  height: 3.5em;
+}
+.profile img {
+  border-radius: 50%;
+}
+.profileName {
+  display: flex;
+  flex-direction: column;
+}
+.profileName h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.profileName p {
+  font-size: 0.875rem;
+}
+.image {
+  width: 25em;
+  height: 16em;
+  padding: 2em 6.5em;
+  justify-self: center;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.sliderBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffe2e2;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  padding: 0.3em;
+}
+
+.sliderBtnLeft {
+  left: 10px;
+}
+
+.sliderBtnRight {
+  right: 10px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dotsDot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+.dotsDotActive {
+  background-color: #333;
+}
+.text {
+  display: none;
+}
+@media (max-width: 650px) {
+  .testimonial {
+    max-width: 35em;
+    min-height: 28em;
+    padding: 1rem;
+    margin: 1.5em;
+  }
+  .sliderBtn {
+    top: 20%;
+    border: none;
+    font-size: 1.8rem;
+  }
+}

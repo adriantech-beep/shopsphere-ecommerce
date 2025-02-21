@@ -1,0 +1,17 @@
+.productsWrapper {
+  min-height: 50em;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+  padding: 1.5em;
+  position: relative;
+}
+.productsTitle {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

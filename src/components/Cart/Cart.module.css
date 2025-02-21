@@ -1,0 +1,12 @@
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  cursor: pointer;
+  height: 3em;
+  color: #1a1a19;
+}
+.cartQuantity {
+  font-weight: 600;
+  color: #1a1a19;
+}

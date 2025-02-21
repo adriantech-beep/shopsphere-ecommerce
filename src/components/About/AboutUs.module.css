@@ -1,0 +1,46 @@
+.wrapper {
+  background-color: #242a2e;
+  min-height: 35em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0em 2em;
+}
+.title {
+  width: 50%;
+}
+.title h1 {
+  font-weight: 600;
+  color: #f3f3f3;
+}
+.title p {
+  color: #f3f3f3;
+  font-weight: 500;
+}
+
+.dividerSection {
+  display: flex;
+  min-height: 15em;
+}
+.divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 15em;
+  padding: 0.8em;
+  border-right: 1px solid #f3f3f3;
+}
+.divider h2 {
+  color: #f3f3f3;
+  font-weight: 500;
+}
+.divider p {
+  color: #f3f3f3;
+  font-size: 0.875em;
+}
+@media (max-width: 860px) {
+  .dividerSection {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

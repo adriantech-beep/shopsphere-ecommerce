@@ -1,0 +1,8 @@
+.deliveryWrapper {
+  background-color: beige;
+  height: 36rem;
+  background-image: url(../src/assets/deliverybg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}

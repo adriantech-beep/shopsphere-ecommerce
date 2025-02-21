@@ -1,0 +1,36 @@
+.navContainer {
+  position: relative;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1em;
+  gap: 2em;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 65rem;
+}
+.nav li {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navItems {
+  text-decoration-line: none;
+  color: black;
+}
+.faBar {
+  display: none;
+}
+
+@media (max-width: 995px) {
+  .navItem.desktopHidden {
+    display: none;
+  }
+}

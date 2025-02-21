@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Spline Sans Mono", serif;
+}
+html {
+  font-size: 82.5%;
+}
+body {
+  position: relative;
+}
+.fa-square-xmark {
+  position: absolute;
+  right: 0em;
+  top: -0.2em;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #d84040;
+}
+.fa-xmark {
+  font-size: 1.5rem;
+  color: red;
+  cursor: pointer;
+}
+.fa-circle-check {
+  font-size: 2.5rem;
+  color: #5cb338;
+}
+.fa-sun,
+.fa-battery-full,
+.fa-leaf,
+.fa-headset {
+  font-size: 3rem;
+  color: #f3f3f3;
+}
+.fa-bars {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.fa-circle-xmark {
+  font-size: 1.8rem;
+  color: #d84040;
+  align-self: flex-end;
+  cursor: pointer;
+}
+@media (max-width: 995px) {
+  .fa-bars {
+    display: block;
+  }
+}
