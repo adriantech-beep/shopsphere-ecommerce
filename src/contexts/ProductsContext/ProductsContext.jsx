@@ -1,7 +1,7 @@
 import { useContext, createContext, useEffect, useReducer } from "react";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import {
-  fetchProducts,
+  fetchProducts as fetchProductsFunc,
   handleSelectItem as handleSelectItemFunc,
   handleClose as handleCloseFunc,
   handleCloseCart as handleCloseCartFunc,
@@ -9,7 +9,7 @@ import {
   handleSearch as handleSearchFunc,
   handleViewNavMobile as handleViewNavMobileFunc,
   handleCloseNavMobile as handleCloseNavMobileFunc,
-} from "./productsUtils";
+} from "./ProductsUtils";
 import PropTypes from "prop-types";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 
@@ -122,7 +122,7 @@ function ProductsProvider({ children }) {
 
   /*initial fething of data*/
   useEffect(() => {
-    fetchProducts(dispatch);
+    fetchProductsFunc(dispatch);
   }, []);
 
   /*i just refered this with the help of v0.dev
